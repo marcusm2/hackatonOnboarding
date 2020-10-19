@@ -6,16 +6,14 @@ namespace Take.EcoRodovias.API.Controllers
 {
     public class GuinchoController : MainController
     {
-        [HttpGet("ecorodovias/api/guinco/{rodovia}/{origem}/{destino}/{quilometro}")]
-        public ServiceViewModel GetGuincho(string rodovia, string origem, string destino, string quilometro)
+        [HttpGet("ecorodovias/api/guinco/{rodovia}/{quilometro}")]
+        public ServiceViewModel GetGuincho(string rodovia, string quilometro)
         {
-            var guincho = new Guincho(rodovia, origem, destino, quilometro);
+            var guincho = new Guincho(rodovia, quilometro);
             guincho.SetTempoMedio();
            
             return new ServiceViewModel
             {
-                Origem = origem,
-                Destino = destino,
                 Distancia = quilometro,
                 TempoMedio = guincho.TempoMedio
             };

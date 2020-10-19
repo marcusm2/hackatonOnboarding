@@ -5,20 +5,18 @@ namespace Take.EcoRodovias.API.Domain.Models
 {
     public class SocorroMedico : Services
     {
-        public SocorroMedico(string rodovia, string origem, string destino, string distancia)
+        public SocorroMedico(string rodovia, string distancia)
         {
             Rodovia = rodovia;
-            Origem = origem;
-            Destino = destino;
             Distancia = distancia;
             Validate();
         }
 
         public override void SetTempoMedio()
         {
-            var tempo = new Random().Next(30, 90);
+            var tempo = new Random().Next(15, 30);
             
-            TempoMedio = $"O tempo médio para chegada do socorro é de {tempo} minutos";
+            TempoMedio = $"{tempo}";
         }
     }
 }

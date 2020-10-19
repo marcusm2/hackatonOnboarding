@@ -5,19 +5,17 @@ namespace Take.EcoRodovias.API.Domain.Models
 {
     public class Guincho : Services
     {
-        public Guincho(string rodovia, string origem, string destino, string distancia)
+        public Guincho(string rodovia, string distancia)
         {
             Rodovia = rodovia;
-            Origem = origem;
-            Destino = destino;
             Distancia = distancia;
         }
 
         public override void SetTempoMedio()
         {
-            var tempo = new Random().Next(150, 180);
+            var tempo = new Random().Next(30, 60);
 
-            TempoMedio = $"O tempo médio para chegada do guincho é de {tempo} minutos";
+            TempoMedio = $"{tempo}";
         }
     }
 }

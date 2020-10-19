@@ -6,16 +6,14 @@ namespace Take.EcoRodovias.API.Controllers
 {
     public class SocorroMedicoController : MainController
     {
-        [HttpGet("ecorodovias/api/socorromedico/{rodovia}/{origem}/{destino}")]
-        public ServiceViewModel GetSocorroMedico(string rodovia, string origem, string destino, string quilometro)
+        [HttpGet("ecorodovias/api/socorromedico/{rodovia}/{quilometro}")]
+        public ServiceViewModel GetSocorroMedico(string rodovia, string quilometro)
         {
-            var socorro = new SocorroMedico(rodovia, origem, destino, quilometro);
+            var socorro = new SocorroMedico(rodovia, quilometro);
             socorro.SetTempoMedio();
 
             return new ServiceViewModel
             {
-                Origem = origem,
-                Destino = destino,
                 Distancia = quilometro,
                 TempoMedio = socorro.TempoMedio
             };

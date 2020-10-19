@@ -24,8 +24,6 @@ namespace Take.EcoRodovias.API.Domain.ValuesObjects
         protected void Validate()
         {
             CheckRodovia();
-            CheckOrigem();
-            CheckDestino();
         }
 
         private void CheckDestino()

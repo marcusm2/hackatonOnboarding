@@ -6,19 +6,17 @@ namespace Take.EcoRodovias.API.Domain.Models
     public class Mecanico : Services
     {
     
-        public Mecanico(string rodovia, string origem, string destino, string distancia)
+        public Mecanico(string rodovia,  string distancia)
         {
             Rodovia = rodovia;
-            Origem = origem;
-            Destino = destino;
             Distancia = distancia;
         }
 
         public override void SetTempoMedio()
         {
-            var tempo = new Random().Next(60, 180);
+            var tempo = new Random().Next(40, 115);
 
-            TempoMedio = $"O tempo médio para chegada do mecânico é de {tempo} minutos";
+            TempoMedio = $"{tempo}";
         }
     }
 }
