@@ -24,3 +24,4 @@ W:\EcoRodovias\EcoRodovias\services\Take.EcoRodovias.API\obj\Debug\netcoreapp3.1
 W:\EcoRodovias\EcoRodovias\services\Take.EcoRodovias.API\obj\Debug\netcoreapp3.1\Take.EcoRodovias.API.dll
 W:\EcoRodovias\EcoRodovias\services\Take.EcoRodovias.API\obj\Debug\netcoreapp3.1\Take.EcoRodovias.API.pdb
 W:\EcoRodovias\EcoRodovias\services\Take.EcoRodovias.API\obj\Debug\netcoreapp3.1\Take.EcoRodovias.API.genruntimeconfig.cache
+W:\EcoRodovias\EcoRodovias\services\Take.EcoRodovias.API\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\ecorodovias - Web Deploy\profile.arm.json
